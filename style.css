@@ -1,0 +1,134 @@
+body {
+  background: linear-gradient(to right, #ffd700, #ffa07a);
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.title {
+  font-size: 36px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: bounceIn 1s ease;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  animation: slideIn 1s ease;
+}
+
+.choices {
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s ease;
+}
+
+.choices:hover {
+  background: linear-gradient(#ffd700, #ffa07a);
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #e44d26, #f16529);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  color: #fff;
+  animation: fadeIn 1s ease;
+}
+#result h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+}
+
+#resultText {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.2);
+}
+
+.choices-container {
+  background: linear-gradient(to right, #4caf50, #45a049);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.choices-container img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#choices button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#choices button:hover {
+  background-color: #45a049;
+}
+
+.score-container {
+  margin-top: 20px;
+  background: linear-gradient(to right, #ffd700, #ffa07a);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.score-container p {
+  font-size: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
